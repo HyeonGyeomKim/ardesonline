@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://211.196.203.10/ardes_db?serverTimezone=UTC
+    username: CnitsDataAdmin
+    password: "@CnitsStudioDATA0"
+  security:
+    user:
+      name: admin
+      password: 1234
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+logging:
+  level:
+    root: debug
