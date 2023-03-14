@@ -3,10 +3,10 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.ardes.mapper.TestMapper">
 
-    <select id="getTest" resultType="java.util.Map">
+    <select id="getUser" resultType="java.util.Map">
         SELECT user_name
-          FROM ardes_online_db
+        FROM ardes_online_db
 
-         WHERE user_name = 'ArdesRPGOnline'
+        WHERE user_name = 'ArdesRPGOnline'
     </select>
 </mapper>

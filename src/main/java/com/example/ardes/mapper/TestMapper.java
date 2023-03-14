@@ -9,5 +9,5 @@ import java.util.Map;
 @Repository
 public interface TestMapper {
 
-    public Map<String, Object> getTest();
+    public Map<String, Object> getUser();
 }

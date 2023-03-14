@@ -1,12 +1,113 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ardes RPG Online</title>
 </head>
 <body>
+<header>
+    <h3 onclick="location.href='#'">ARDES RPG Online</h3>
+    <nav>
+        <ul class="nav__links">
+            <li><a href="#">새소식</a></li>
+            <li><a href="#">게임정보</a></li>
+            <li><a href="#">커뮤니티</a></li>
+            <li><a href="#">문의</a></li>
+            <li><a href="#">치장상점</a></li>
+        </ul>
+    </nav>
+    <a class="cta" href="#"><button><p th:text="${userName}">message</p></button></a>
+</header>
+<div class="background">
+    <div class="contaner">
+        <div class="box1">
+            <img src="img/banner.png" alt="">
+        </div>
+        <div class="bannerbar">
+            <ul class="banner_links">
+                <li><a href="">캐릭터 성장 혜택 안내</a></li>
+                <li><a href="">장기 미접속 유저 혜택 안내</a></li>
+                <li><a href="">게임 가이드</a></li>
+                <li><a href="">스킬 가이드</a></li>
+                <li><a href="">이벤트 </a></li>
+            </ul>
+        </div>
 
-<p th:text="${hello}">message</p>
+        <div class="categories">
 
+            <div id="i-1" class="categoriesBox">
+                <div class="categoriesTitleBox">
+                    <h3>개발자 노트</h3>
+                </div>
+                <div class="categoriesImgBox">
+                    <img src="img/개발자 노트.png" alt="">
+                </div>
+                <div class="categoriesTextBox">
+                    <span>DEV 아르데스 온라인</span>
+                </div>
+            </div>
+
+            <div id="i-2" class="categoriesBox">
+                <div class="categoriesTitleBox">
+                    <h3>공지사항</h3>
+                </div>
+            </div>
+
+            <div id="i-3" class="categoriesBox">
+                <div class="categoriesTitleBox">
+                    <h3>업데이트 소개</h3>
+                </div>
+                <div class="categoriesImgBox"></div>
+                <div class="categoriesTextBox">
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="categories">
+
+            <div id="i-4" class="categoriesBox">
+                <div class="categoriesTitleBox">
+                    <h3>공식 동영상</h3>
+                </div>
+                <div class="categoriesImgBox">
+                    <iframe width="380px" height="220px" src="https://www.youtube.com/embed/3hzY2IfOEqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="categoriesTextBox">
+                    <span>DEV 보스</span>
+                </div>
+            </div>
+
+            <div id="i-5" class="categoriesBox">
+                <div class="categoriesTitleBox">
+                    <h3>게임가이드</h3>
+                </div>
+                <div class="categoriesImgBox">
+                    <img src="img/게임가이드.jpg" alt="">
+                </div>
+                <div class="categoriesTextBox">
+                    <span>장비 강화</span>
+                </div>
+            </div>
+
+            <div id="i-6" class="categoriesBox">
+                <div class="categoriesTitleBox">
+                    <h3>BGM</h3>
+                </div>
+                <div class="categoriesImgBox"></div>
+                <div class="categoriesTextBox">
+                    <img src="img/btn_main_bgm.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
 </body>
+<script src="js/main.js"></script>
 </html>
