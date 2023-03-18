@@ -7,8 +7,7 @@ import java.util.Map;
 
 @Mapper
 @Repository
-public interface TestMapper {
+public interface GetTokenMapper {
 
-    public Map<String, Object> getUser();
     public Map<String, Object> getUserByToken(String token);
 }
